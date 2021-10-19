@@ -1,14 +1,12 @@
 // @ts-nocheck
-import {UrlsUtil} from '../Utils/Urls.Util';
-const url = new UrlsUtil();
 import { Page } from '@playwright/test';
+import { UrlsUtil } from '../Utils/Urls.Util';
+const urls = new UrlsUtil();
 
 export class LandingPage {
-    constructor(page: Page) { 
+    constructor(page: Page) {
         this.page = page;
     }
-    _url: string = url._landingPage;
-
-    async navigate() { await this.page.goto(landingPage._url); }
+    async navigate() { await this.page.goto(urls._landingPage); }
     async getTotalFiles() { await this.page.$eval('text=86Total Files'); }
 }
