@@ -11,11 +11,11 @@ App Breakdown
 ---
 Automated Test Breakdown:
 * Typescript
-* Using Cypress to execute tests, control browser, and validate tests
+* Using Playwright to execute tests, control browser, and validate tests
 * Uses Page Object Model design pattern
 * Uses Factory design pattern for non-persistant test fixtures
 ---
 * Open the solution in any IDE
 * Yarn run start (launches the app locally)
-* Cypress Run (launches Cypress)
+* npx playwright test (launches Cypress)
 * Form there you can run your tests
